@@ -1,4 +1,4 @@
-# React `useEffect` Tutorial: Document Title
+# React `useEffect` Tutorial: with State Value
 
 This tutorial builds a small React demo where clicking counter buttons updates both on-screen state
 
