@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 type DocumentTitleProps = {
 	initialCount?: number;
-}
+};
 
 export default function DocumentTitle({ initialCount = 0 }: DocumentTitleProps) {
 	const [count, setCount] = useState(initialCount);
@@ -30,5 +30,5 @@ export default function DocumentTitle({ initialCount = 0 }: DocumentTitleProps) 
 				Increment
 			</button>
 		</>
-	)
+	);
 }
