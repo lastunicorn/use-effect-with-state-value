@@ -27,18 +27,18 @@ cd use-effect-demo
 npm install
 ```
 
-## Step 2: Create `DocumentTitle` component
+## Step 2: Create `UseEffectDemo` component
 
-Add `src/features/document-title/DocumentTitle.tsx` file:
+Add `src/features/use-effect-demo/UseEffectDemo.tsx` file:
 
 ```tsx
 import { useEffect, useState } from "react";
 
-type DocumentTitleProps = {
+type UseEffectDemoProps = {
 	initialCount?: number;
 }
 
-export default function DocumentTitle({ initialCount = 0 }: DocumentTitleProps) {
+export default function UseEffectDemo({ initialCount = 0 }: UseEffectDemoProps) {
 	const [count, setCount] = useState(initialCount);
 
 	function handleDecrement() {
@@ -72,16 +72,14 @@ export default function DocumentTitle({ initialCount = 0 }: DocumentTitleProps) 
 
 ```tsx
 import './App.css'
-import { DocumentTitle } from './features/document-title'
+import { UseEffectDemo } from './features/document-title'
 
 export default function App() {
 	return (
 		<>
 			<h1>React <code>useEffect</code> Demo</h1>
 
-			<h2>Update Document Title</h2>
-			
-			<DocumentTitle
+			<UseEffectDemo
 				initialCount={100}
 			/>
 		</>

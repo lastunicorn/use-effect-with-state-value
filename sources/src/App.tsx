@@ -1,5 +1,5 @@
 import "./App.css";
-import { DocumentTitle } from "./features/document-title";
+import { UseEffectDemo } from "./features/use-effect-demo";
 
 export default function App() {
 	return (
@@ -8,9 +8,7 @@ export default function App() {
 				React <code>useEffect</code> Demo
 			</h1>
 
-			<h2>Update Document Title</h2>
-
-			<DocumentTitle initialCount={100} />
+			<UseEffectDemo initialCount={100} />
 		</>
 	);
 }
